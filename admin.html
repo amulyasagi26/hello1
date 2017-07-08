@@ -2,16 +2,7 @@
 <html lang="en">
 
     <head>
-        <script>
-            function validateSignIn() {
-                var username=document.getElementById("").value;
-                if(username==="")
-                {
-                    alert("enter valid user name");
-                }
-                window.alert("e");
-            }
-        </script>
+       
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -77,11 +68,11 @@
 				                    <form role="form" action="" method="post" class="login-form" onclick="validateSignIn()">
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-username">Username</label>
-				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username">
+				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username" value="">
 				                        </div>
 				                        <div class="form-group">
 				                        	<label class="sr-only" for="form-password">Password</label>
-				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password">
+				                        	<input type="password" name="form-password" placeholder="Password..." class="form-password form-control" id="form-password" value="">
 				                        </div>
 				                        <button type="submit" class="btn" onclick="validateSignIn()" >Sign in!</button>
 				                    </form>
@@ -138,12 +129,7 @@
         <!--[if lt IE 10]>
             <script src="assets/js/placeholder.js"></script>
         <![endif]-->
- <script>
-            function validateSignIn() {
-                
-                window.alert("e");
-            }
-        </script>
+  
     </body>
 
 </html>
