@@ -84,7 +84,7 @@
 	                            </div>
 
 	                            <div class="form-bottom">
-				                    <form role="form" action="" method="post" class="login-form" >
+				                    <form role="form" action="validateadmin.php" method="post" class="login-form" >
 				                    	<div class="form-group">
 				                    		<label class="sr-only" for="form-username">Username</label>
 				                        	<input type="text" name="form-username" placeholder="Username..." class="form-username form-control" id="form-username" value="">
@@ -150,48 +150,7 @@
             <script src="assets/js/placeholder.js"></script>
         <![endif]-->
   
-          <?php
-// phppppppppppppppppppppppppppppppppppppppppppppp
-       
-        if(isset($_REQUEST['form-username']) && isset($_REQUEST['form-password']))
-        {
-
-
-        $u=$_REQUEST['form-username'];
-    $p=$_REQUEST['form-password'];
-$conn=mysqli_connect('localhost','root','');
-$connection=mysqli_select_db($conn,"demo");
-
-if($conn->connect_error)
-{
-    die("Connection failed: " . $conn->connect_error);
-
-}
-else
-{
-    echo"sucessful";
-    $query="select * from logins where roll='".$u."' and pswd='".$p."';";
-    echo $query;
-    $q=mysqli_query($conn,$query);
-    $n=mysqli_num_rows($q);
-echo $n;
-if($n==1)
-{
-    
-        echo("correct");
-        header('Location: http://www.google.com');
-        }
-    
-    else
-    {
-        echo"incorrect";
-    }
-
- } 
-       }
-
-// phppppppppppppppppppppppppppppppppppppppppppppp
-?>
+        
     </body>
 
 </html>

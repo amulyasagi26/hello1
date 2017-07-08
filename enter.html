@@ -4,7 +4,7 @@
 	<script >
 		function mvalidate()
 		{
-			alert("hi");
+			//alert("hi");
 			var m =document.getElementById('maths').value;
 			var s=document.getElementById('sci').value;
 			var e=document.getElementById('eng').value;
@@ -27,12 +27,12 @@
 		function uvalidate()
 		{
 
-				alert("ho");
+				//alert("ho");
 				r=document.getElementById('roll').value;
 				p=document.getElementById('pswd').value;
-				alert(""+r);
-				alert(""+p);
-				alert("php code goes here");
+				//alert(""+r);
+				//alert(""+p);
+				//alert("php code goes here");
 
 		}
 	</script>
@@ -417,7 +417,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <div class="container">
 	<div class="col-md-4">
-    		<form name="one">
+    		<form action="adminstudent.php">
 			<div id="contact-form" class="form-container" data-form-container style="color: rgb(46, 125, 50); background: rgb(200, 230, 201);">
 			<div class="row">
 				<div class="form-title">
@@ -428,15 +428,11 @@
 				<div class="row">
 					<span class="req-input valid" >
 						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Input your post title."> </span>
-						<input type="text" data-min-length="8" placeholder="roll no" value="" id="roll">
+						<input type="text" data-min-length="8" placeholder="roll no" value="" id="roll" name="roll">
 					</span>
 				</div>
 			
-				<div class="row">
-					<span class="req-input message-box valid">
-						<span class="input-status" data-toggle="tooltip" data-placement="top" title="Post Contents."> </span>
-						<textarea type="text" data-min-length="10" placeholder="mailid" value="" id="pswd"></textarea>
-				</div>
+				
 				<div class="row submit-row">
 					<button type="button" class="btn btn-block submit-form valid" onclick="uvalidate()">Submit</button>
 				</div>
